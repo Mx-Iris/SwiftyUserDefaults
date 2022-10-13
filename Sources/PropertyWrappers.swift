@@ -53,6 +53,7 @@ public final class SwiftyUserDefault<T: DefaultsSerializable, KeyStore: Defaults
         set {
             _value = newValue
             adapter[key: key] = newValue
+            adapter.defaults.synchronize()
         }
     }
 
