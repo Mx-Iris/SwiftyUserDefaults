@@ -30,6 +30,7 @@ let package = Package(
     ],
     products: [
         .library(name: "SwiftyUserDefaults", targets: ["SwiftyUserDefaults"]),
+        .library(name: "SwiftyUserDefaults-Dynamic", type: .dynamic, targets: ["SwiftyUserDefaults"])
     ],
     dependencies: resolveDependencies(),
     targets: resolveTargets()
